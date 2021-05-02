@@ -43,12 +43,29 @@ class ViewController: UIViewController {
         button.backgroundColor = .darkGray
         button.layer.cornerRadius = 5
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(gotoNextVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(gotoRocketVC), for: .touchUpInside)
         return button
     }()
     
-    @objc func gotoNextVC() {
+    @objc func gotoRocketVC() {
         let vc = RocketViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    var myButton2: UIButton = {
+        let button = UIButton()
+        button.setTitle("Go To Animation", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
+        button.layer.cornerRadius = 5
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(goToAnimationVC), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc func goToAnimationVC() {
+        let vc = AnimationViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
@@ -81,6 +98,12 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             myButton.leadingAnchor.constraint(equalTo: myImageView.trailingAnchor, constant: 20),
             myButton.topAnchor.constraint(equalTo: myLabel.bottomAnchor, constant: 10)
+        ])
+        
+        self.view.addSubview(myButton2)
+        NSLayoutConstraint.activate([
+            myButton2.leadingAnchor.constraint(equalTo: myImageView.trailingAnchor, constant: 20),
+            myButton2.topAnchor.constraint(equalTo: myButton.bottomAnchor, constant: 20)
         ])
     }
 

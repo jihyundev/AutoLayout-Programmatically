@@ -14,6 +14,7 @@
 		592A09CA263D21A700BA3926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592A09C9263D21A700BA3926 /* Assets.xcassets */; };
 		592A09CD263D21A700BA3926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592A09CB263D21A700BA3926 /* LaunchScreen.storyboard */; };
 		592A09D6263D36F000BA3926 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A09D5263D36F000BA3926 /* RocketViewController.swift */; };
+		59B1DD12263E3E5C009DB7AE /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1DD11263E3E5C009DB7AE /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		592A09CC263D21A700BA3926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		592A09CE263D21A700BA3926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		592A09D5263D36F000BA3926 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
+		59B1DD11263E3E5C009DB7AE /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				592A09C2263D21A000BA3926 /* SceneDelegate.swift */,
 				592A09C4263D21A000BA3926 /* ViewController.swift */,
 				592A09D5263D36F000BA3926 /* RocketViewController.swift */,
+				59B1DD11263E3E5C009DB7AE /* AnimationViewController.swift */,
 				592A09C6263D21A000BA3926 /* Main.storyboard */,
 				592A09C9263D21A700BA3926 /* Assets.xcassets */,
 				592A09CB263D21A700BA3926 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				592A09D6263D36F000BA3926 /* RocketViewController.swift in Sources */,
 				592A09C5263D21A000BA3926 /* ViewController.swift in Sources */,
+				59B1DD12263E3E5C009DB7AE /* AnimationViewController.swift in Sources */,
 				592A09C1263D21A000BA3926 /* AppDelegate.swift in Sources */,
 				592A09C3263D21A000BA3926 /* SceneDelegate.swift in Sources */,
 			);
